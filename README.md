@@ -24,6 +24,14 @@ Antes de ejecutar el back-end, es necesario instalar todas las librerías utiliz
 Posteriormente, se debe migrar la configuración del esquema de datos a la base de datos utilizando el ORM seleccionado; en este caso _Prisma_.
 
     npx prisma migrate dev --name init
+    
+## Variables de entorno en archivo `.env`
+
+   DATABASE_URL="postgresql://db_tyba_user:db_tyba_pss@localhost:5432/db_tyba?schema=public"
+
+   API_KEY = "..." // APIKEY para Places API de Google 
+   
+   SECRET="tyba_secret"
 
 ## Ejecución
 
